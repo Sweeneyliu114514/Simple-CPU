@@ -6,10 +6,12 @@ set_property -dict {PACKAGE_PIN V10 IOSTANDARD LVCMOS33} [get_ports {rst_n}]
 ## 按键
 set_property -dict {PACKAGE_PIN N17 IOSTANDARD LVCMOS33} [get_ports {continue_btn}]
 ## LED指示灯
+#  最右边四位LED指示ALU的运算结果标志位
 set_property -dict {PACKAGE_PIN H17 IOSTANDARD LVCMOS33} [get_ports {alu_flags[0]}]
 set_property -dict {PACKAGE_PIN K15 IOSTANDARD LVCMOS33} [get_ports {alu_flags[1]}]
 set_property -dict {PACKAGE_PIN J13 IOSTANDARD LVCMOS33} [get_ports {alu_flags[2]}]
 set_property -dict {PACKAGE_PIN N14 IOSTANDARD LVCMOS33} [get_ports {alu_flags[3]}]
+#  最左边三位LED指示复位开关、继续执行按钮、时钟锁定信号
 set_property -dict {PACKAGE_PIN V11 IOSTANDARD LVCMOS33} [get_ports {rst_indicator}]
 set_property -dict {PACKAGE_PIN V12 IOSTANDARD LVCMOS33} [get_ports {continue_btn_indicator}]
 set_property -dict {PACKAGE_PIN V14 IOSTANDARD LVCMOS33} [get_ports {clk_locked}]

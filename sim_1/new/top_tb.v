@@ -10,6 +10,7 @@ module top_tb ();
         .continue_btn(continue_btn),
         .alu_flags   (alu_flags)
     );
+    always #5 clk_100MHz = ~clk_100MHz;
     initial begin
         clk_100MHz   = 0;
         rst_n        = 1'b1;
@@ -33,5 +34,4 @@ module top_tb ();
         #5000 continue_btn = 1'b1;//JMPGEZ测试,跳转至地址0
         #1500 continue_btn = 1'b0;
     end
-    always #5 clk_100MHz = ~clk_100MHz;
 endmodule

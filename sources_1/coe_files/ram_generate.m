@@ -3,7 +3,6 @@ fileID = fopen('ram_test_lxx.coe', 'w');
 % 写关键字
 fprintf(fileID, 'memory_initialization_radix=16;\n');
 fprintf(fileID, 'memory_initialization_vector=\n');
-
 code_seg_start = 0;
 code_seg_end = 122;% 该参数根据需要测试的汇编指令数目进行修改,这里是测试了123条指令
 initial_data_num = 101;
@@ -54,7 +53,6 @@ fprintf(fileID,append('0500',',\n'));
 for i = code_seg_end+1:initial_data_start-1
     fprintf(fileID,'0000,\n' );
 end
-
 %%% 写入数据
 % 将1至100存入地址131~230
 for j = 1:initial_data_num-1
