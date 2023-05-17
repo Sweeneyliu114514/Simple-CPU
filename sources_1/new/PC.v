@@ -11,11 +11,12 @@ module PC (
         if (!rst_n) begin
             pc_data_reg <= 8'd0;
             flag        <= 1'b0;
-        end else begin
+        end 
+        else begin
             if (control_signals[9] == 4'b1) pc_data_reg <= mbr2pc;
             else if (control_signals[4] == 4'b1) begin
                 if (flag == 1'b0) pc_data_reg <= pc_data_reg + 8'd1;
-                flag        <= ~flag;
+                flag <= ~flag;
                 /* 控制信号每两个时钟周期改变一次,为了防止PC多加一次1需要设置flag判断 */
             end
         end

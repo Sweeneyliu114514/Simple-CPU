@@ -52,6 +52,4 @@ module Top (
         .key_in  (continue_btn),
         .key_flag(continue_flag)
     );
-
-
 endmodule

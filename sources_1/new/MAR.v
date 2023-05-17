@@ -8,9 +8,8 @@ module MAR (
 );
     reg [7:0] mar_data_reg;
     always @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
-            mar_data_reg <= 8'd0;
-        end else begin
+        if (!rst_n) mar_data_reg <= 8'd0;
+        else begin
             if (control_signals[7] == 4'b1) mar_data_reg <= mbr2mar;
             else if (control_signals[3] == 4'b1) mar_data_reg <= pc2mar;
         end

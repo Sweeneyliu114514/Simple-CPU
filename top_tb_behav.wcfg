@@ -1,0 +1,470 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="236602500fs"></ZoomStartTime>
+      <ZoomEndTime time="237988501fs"></ZoomEndTime>
+      <Cursor1Time time="220498000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="362"></NameColumnWidth>
+      <ValueColumnWidth column_width="116"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="11" />
+   <wvobject fp_name="group112" type="group">
+      <obj_property name="label">ACC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/acc_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/acc_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/acc_inst/acc_alu_io_rw" type="logic">
+         <obj_property name="ElementShortName">acc_alu_io_rw</obj_property>
+         <obj_property name="ObjectShortName">acc_alu_io_rw</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/acc_inst/alu2acc" type="array">
+         <obj_property name="ElementShortName">alu2acc[15:0]</obj_property>
+         <obj_property name="ObjectShortName">alu2acc[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/acc_inst/acc_data" type="array">
+         <obj_property name="ElementShortName">acc_data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">acc_data[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group104" type="group">
+      <obj_property name="label">ALU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/alu_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/alu_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/alu_inst/acc_alu_io_rw" type="logic">
+         <obj_property name="ElementShortName">acc_alu_io_rw</obj_property>
+         <obj_property name="ObjectShortName">acc_alu_io_rw</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/alu_inst/control_signals" type="array">
+         <obj_property name="ElementShortName">control_signals[15:0]</obj_property>
+         <obj_property name="ObjectShortName">control_signals[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/alu_inst/br2alu" type="array">
+         <obj_property name="ElementShortName">br2alu[15:0]</obj_property>
+         <obj_property name="ObjectShortName">br2alu[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/alu_inst/acc2alu" type="array">
+         <obj_property name="ElementShortName">acc2alu[15:0]</obj_property>
+         <obj_property name="ObjectShortName">acc2alu[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/alu_inst/result_LSB" type="array">
+         <obj_property name="ElementShortName">result_LSB[15:0]</obj_property>
+         <obj_property name="ObjectShortName">result_LSB[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/alu_inst/result_MSB" type="array">
+         <obj_property name="ElementShortName">result_MSB[15:0]</obj_property>
+         <obj_property name="ObjectShortName">result_MSB[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/alu_inst/alu_flags" type="array">
+         <obj_property name="ElementShortName">alu_flags[3:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_flags[3:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group85" type="group">
+      <obj_property name="label">BR</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/br_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/br_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/br_inst/control_signals" type="array">
+         <obj_property name="ElementShortName">control_signals[15:0]</obj_property>
+         <obj_property name="ObjectShortName">control_signals[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/br_inst/mbr2br" type="array">
+         <obj_property name="ElementShortName">mbr2br[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mbr2br[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/br_inst/br_data" type="array">
+         <obj_property name="ElementShortName">br_data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">br_data[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group35" type="group">
+      <obj_property name="label">CU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/cu_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/cu_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/cu_inst/continue_flag" type="logic">
+         <obj_property name="ElementShortName">continue_flag</obj_property>
+         <obj_property name="ObjectShortName">continue_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/cu_inst/flag" type="logic">
+         <obj_property name="ElementShortName">flag</obj_property>
+         <obj_property name="ObjectShortName">flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/cu_inst/acc_alu_io_rw" type="logic">
+         <obj_property name="ElementShortName">acc_alu_io_rw</obj_property>
+         <obj_property name="ObjectShortName">acc_alu_io_rw</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/cu_inst/flags" type="array">
+         <obj_property name="ElementShortName">flags[3:0]</obj_property>
+         <obj_property name="ObjectShortName">flags[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/cu_inst/ir" type="array">
+         <obj_property name="ElementShortName">ir[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ir[7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/cu_inst/CBR" type="array">
+         <obj_property name="ElementShortName">CBR[15:0]</obj_property>
+         <obj_property name="ObjectShortName">CBR[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/cu_inst/CAR" type="array">
+         <obj_property name="ElementShortName">CAR[7:0]</obj_property>
+         <obj_property name="ObjectShortName">CAR[7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group78" type="group">
+      <obj_property name="label">IR</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/ir_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/ir_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/ir_inst/control_signals" type="array">
+         <obj_property name="ElementShortName">control_signals[15:0]</obj_property>
+         <obj_property name="ObjectShortName">control_signals[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/ir_inst/mbr2ir" type="array">
+         <obj_property name="ElementShortName">mbr2ir[7:0]</obj_property>
+         <obj_property name="ObjectShortName">mbr2ir[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/ir_inst/ir_data" type="array">
+         <obj_property name="ElementShortName">ir_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ir_data[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group36" type="group">
+      <obj_property name="label">MAR</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/mar_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/mar_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/mar_inst/control_signals" type="array">
+         <obj_property name="ElementShortName">control_signals[15:0]</obj_property>
+         <obj_property name="ObjectShortName">control_signals[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/mar_inst/mbr2mar" type="array">
+         <obj_property name="ElementShortName">mbr2mar[7:0]</obj_property>
+         <obj_property name="ObjectShortName">mbr2mar[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/mar_inst/pc2mar" type="array">
+         <obj_property name="ElementShortName">pc2mar[7:0]</obj_property>
+         <obj_property name="ObjectShortName">pc2mar[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/mar_inst/mar_data" type="array">
+         <obj_property name="ElementShortName">mar_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">mar_data[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group28" type="group">
+      <obj_property name="label">MBR</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/mbr_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/mbr_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/mbr_inst/control_signals" type="array">
+         <obj_property name="ElementShortName">control_signals[15:0]</obj_property>
+         <obj_property name="ObjectShortName">control_signals[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/mbr_inst/acc2mbr" type="array">
+         <obj_property name="ElementShortName">acc2mbr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">acc2mbr[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/mbr_inst/mem2mbr" type="array">
+         <obj_property name="ElementShortName">mem2mbr[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mem2mbr[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/mbr_inst/mbr_data" type="array">
+         <obj_property name="ElementShortName">mbr_data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mbr_data[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group44" type="group">
+      <obj_property name="label">PC</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/pc_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/pc_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/pc_inst/control_signals" type="array">
+         <obj_property name="ElementShortName">control_signals[15:0]</obj_property>
+         <obj_property name="ObjectShortName">control_signals[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/pc_inst/mbr2pc" type="array">
+         <obj_property name="ElementShortName">mbr2pc[7:0]</obj_property>
+         <obj_property name="ObjectShortName">mbr2pc[7:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/pc_inst/pc_data" type="array">
+         <obj_property name="ElementShortName">pc_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_data[7:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group232" type="group">
+      <obj_property name="label">SEG</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/seg_display_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/seg_display_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/seg_display_inst/acc_data" type="array">
+         <obj_property name="ElementShortName">acc_data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">acc_data[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/seg_display_inst/mr_data" type="array">
+         <obj_property name="ElementShortName">mr_data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mr_data[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/seg_display_inst/anode_select" type="array">
+         <obj_property name="ElementShortName">anode_select[7:0]</obj_property>
+         <obj_property name="ObjectShortName">anode_select[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/seg_display_inst/seg_select" type="array">
+         <obj_property name="ElementShortName">seg_select[6:0]</obj_property>
+         <obj_property name="ObjectShortName">seg_select[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/seg_display_inst/cnt" type="array">
+         <obj_property name="ElementShortName">cnt[31:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/seg_display_inst/current_seg" type="array">
+         <obj_property name="ElementShortName">current_seg[3:0]</obj_property>
+         <obj_property name="ObjectShortName">current_seg[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/seg_display_inst/clk_freq" type="array">
+         <obj_property name="ElementShortName">clk_freq[31:0]</obj_property>
+         <obj_property name="ObjectShortName">clk_freq[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/seg_display_inst/refresh_freq" type="array">
+         <obj_property name="ElementShortName">refresh_freq[31:0]</obj_property>
+         <obj_property name="ObjectShortName">refresh_freq[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/seg_display_inst/cnt_max" type="array">
+         <obj_property name="ElementShortName">cnt_max[31:0]</obj_property>
+         <obj_property name="ObjectShortName">cnt_max[31:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group220" type="group">
+      <obj_property name="label">CPU</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/continue_flag" type="logic">
+         <obj_property name="ElementShortName">continue_flag</obj_property>
+         <obj_property name="ObjectShortName">continue_flag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/ram_rw" type="logic">
+         <obj_property name="ElementShortName">ram_rw</obj_property>
+         <obj_property name="ObjectShortName">ram_rw</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/alu_flags" type="array">
+         <obj_property name="ElementShortName">alu_flags[3:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_flags[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/anode_select" type="array">
+         <obj_property name="ElementShortName">anode_select[7:0]</obj_property>
+         <obj_property name="ObjectShortName">anode_select[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/seg_select" type="array">
+         <obj_property name="ElementShortName">seg_select[6:0]</obj_property>
+         <obj_property name="ObjectShortName">seg_select[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/acc_alu_io_rw" type="logic">
+         <obj_property name="ElementShortName">acc_alu_io_rw</obj_property>
+         <obj_property name="ObjectShortName">acc_alu_io_rw</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/control_signals" type="array">
+         <obj_property name="ElementShortName">control_signals[15:0]</obj_property>
+         <obj_property name="ObjectShortName">control_signals[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/mr_data" type="array">
+         <obj_property name="ElementShortName">mr_data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mr_data[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/acc_data" type="array">
+         <obj_property name="ElementShortName">acc_data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">acc_data[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/br_data" type="array">
+         <obj_property name="ElementShortName">br_data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">br_data[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/ir_data" type="array">
+         <obj_property name="ElementShortName">ir_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">ir_data[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/mbr_data" type="array">
+         <obj_property name="ElementShortName">mbr_data[15:0]</obj_property>
+         <obj_property name="ObjectShortName">mbr_data[15:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/mar_data" type="array">
+         <obj_property name="ElementShortName">mar_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">mar_data[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/cpu_inst/pc_data" type="array">
+         <obj_property name="ElementShortName">pc_data[7:0]</obj_property>
+         <obj_property name="ObjectShortName">pc_data[7:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group140" type="group">
+      <obj_property name="label">TOP</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/top_tb/top_inst/clk_100MHz" type="logic">
+         <obj_property name="ElementShortName">clk_100MHz</obj_property>
+         <obj_property name="ObjectShortName">clk_100MHz</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/clk" type="logic">
+         <obj_property name="ElementShortName">clk</obj_property>
+         <obj_property name="ObjectShortName">clk</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/rst_n" type="logic">
+         <obj_property name="ElementShortName">rst_n</obj_property>
+         <obj_property name="ObjectShortName">rst_n</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/continue_btn" type="logic">
+         <obj_property name="ElementShortName">continue_btn</obj_property>
+         <obj_property name="ObjectShortName">continue_btn</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/rst_indicator" type="logic">
+         <obj_property name="ElementShortName">rst_indicator</obj_property>
+         <obj_property name="ObjectShortName">rst_indicator</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/anode_select" type="array">
+         <obj_property name="ElementShortName">anode_select[7:0]</obj_property>
+         <obj_property name="ObjectShortName">anode_select[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/seg_select" type="array">
+         <obj_property name="ElementShortName">seg_select[6:0]</obj_property>
+         <obj_property name="ObjectShortName">seg_select[6:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/alu_flags" type="array">
+         <obj_property name="ElementShortName">alu_flags[3:0]</obj_property>
+         <obj_property name="ObjectShortName">alu_flags[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/data_in" type="array">
+         <obj_property name="ElementShortName">data_in[15:0]</obj_property>
+         <obj_property name="ObjectShortName">data_in[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/data_out" type="array">
+         <obj_property name="ElementShortName">data_out[15:0]</obj_property>
+         <obj_property name="ObjectShortName">data_out[15:0]</obj_property>
+         <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/address" type="array">
+         <obj_property name="ElementShortName">address[7:0]</obj_property>
+         <obj_property name="ObjectShortName">address[7:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/ram_rw" type="logic">
+         <obj_property name="ElementShortName">ram_rw</obj_property>
+         <obj_property name="ObjectShortName">ram_rw</obj_property>
+      </wvobject>
+      <wvobject fp_name="/top_tb/top_inst/continue_flag" type="logic">
+         <obj_property name="ElementShortName">continue_flag</obj_property>
+         <obj_property name="ObjectShortName">continue_flag</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

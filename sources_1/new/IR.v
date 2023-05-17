@@ -7,12 +7,8 @@ module IR (
 );
     reg [7:0] ir_data_reg;
     always @(posedge clk or negedge rst_n) begin
-        if (!rst_n) begin
-            ir_data_reg <= 8'd0;
-        end else begin
-            if (control_signals[6] == 4'b1) ir_data_reg <= mbr2ir;
-        end
+        if (!rst_n) ir_data_reg <= 8'd0;
+        else if (control_signals[6] == 4'b1) ir_data_reg <= mbr2ir;
     end
     assign ir_data = ir_data_reg;
-
 endmodule

@@ -100,6 +100,4 @@ module CPU (
         .mbr2pc         (mbr_data[7:0]),
         .pc_data        (pc_data)
     );
-    
-    
 endmodule

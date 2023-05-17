@@ -8,11 +8,7 @@ module ACC (
     reg [15:0] acc_data_reg;
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) acc_data_reg <= 16'd0;
-        else begin
-            if (acc_alu_io_rw == 1'b1) acc_data_reg <= alu2acc;
-        end
+        else if (acc_alu_io_rw == 1'b1) acc_data_reg <= alu2acc;
     end
-
     assign acc_data = acc_data_reg;
-
 endmodule

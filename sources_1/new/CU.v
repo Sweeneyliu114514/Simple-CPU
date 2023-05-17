@@ -6,7 +6,6 @@ module CU (
     input  [ 7:0] ir,              //指令寄存器IR
     output        acc_alu_io_rw,   //ALU与ACC之间的IO读写控制信号,1为写ACC,0为读ACC
     output [15:0] control_signals  //生成的控制信号
-
 );
     reg  [ 7:0] CAR_Inc;  //CAR++
     reg  [ 7:0] Opcode_mapped;  //Opcode映射后的值
@@ -75,10 +74,8 @@ module CU (
                 //对应按钮按下,退出HALT状态,继续执行下一条指令
                 if (continue_flag == 1'b1) CAR <= 8'd0;
                 //没有按钮按下,继续保持HALT状态,CAR不变 
-                else
-                    CAR <= CAR;
+                else CAR <= CAR;
             end
         end
     end
-
 endmodule

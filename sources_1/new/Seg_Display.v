@@ -81,5 +81,4 @@ module Seg_Display (
             default: seg_select <= 7'b0000001;
         endcase
     end
-
 endmodule
