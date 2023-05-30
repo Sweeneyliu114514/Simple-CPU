@@ -45,7 +45,6 @@ module CPU (
     ALU alu_inst (
         .clk            (clk),
         .rst_n          (rst_n),
-        .acc_alu_io_rw  (acc_alu_io_rw),
         .control_signals(control_signals),
         .br2alu         (br_data),
         .acc2alu        (acc_data),
