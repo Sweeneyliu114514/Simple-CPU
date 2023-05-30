@@ -1,15 +1,13 @@
 module ALU (
     input                clk,
     input                rst_n,
-    input                acc_alu_io_rw,    //ALU与ACC之间的IO读写控制信号,1为写ACC,0为读ACC
     input         [15:0] control_signals,  //来自CU的控制信号
     input  signed [15:0] br2alu,           //来自BR的数据
     input  signed [15:0] acc2alu,          //来自ACC的数据
     output        [15:0] alu2acc,          //输出给ACC的数据
     output        [15:0] mr_data,          //存储乘法运算结果LSB的MR
     output        [ 3:0] alu_flags
-    /* 
-    alu_flags为标志寄存器
+    /* alu_flags为标志寄存器
     alu_flags[0]标志运算结果正负,1为负,0为正
     alu_flags[1]标志运算结果是否为零,1为零,0为非零
     alu_flags[2]标志运算结果溢出,1为溢出,0为未溢出

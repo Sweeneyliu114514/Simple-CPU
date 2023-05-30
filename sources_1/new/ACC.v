@@ -6,9 +6,11 @@ module ACC (
     output [15:0] acc_data          //ACC的数据输出
 );
     reg [15:0] acc_data_reg;
+    assign acc_data = acc_data_reg;
     always @(posedge clk or negedge rst_n) begin
         if (!rst_n) acc_data_reg <= 16'd0;
-        else if (acc_alu_io_rw == 1'b1) acc_data_reg <= alu2acc;
+        else begin
+            if (acc_alu_io_rw == 1'b1) acc_data_reg <= alu2acc;
+        end
     end
-    assign acc_data = acc_data_reg;
 endmodule

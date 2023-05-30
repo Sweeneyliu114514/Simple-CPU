@@ -3,8 +3,8 @@ module Top (
     input        rst_n,
     input        continue_btn,
     output       continue_btn_indicator,
-    output       rst_indicator,
-    output       clk_locked,
+    output       rst_indicator,           //用于指示reset信号
+    output       clk_locked,              //dds的有效信号
     output [7:0] anode_select,            //数码管位选信号,低电平选中
     output [6:0] seg_select,              //数码管段选信号,低电平点亮
     output [3:0] alu_flags                //ALU的标志寄存器
@@ -52,4 +52,6 @@ module Top (
         .key_in  (continue_btn),
         .key_flag(continue_flag)
     );
+
+
 endmodule
